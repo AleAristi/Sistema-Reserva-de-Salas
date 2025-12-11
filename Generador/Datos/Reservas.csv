@@ -1,0 +1,22 @@
+TipoPersona,Nombre,RUT,Funcion,Edificio,Sala,Fecha,HoraInicio,HoraFin
+Profesor,Sofia Silva,10024903-6,Investigador,I,37,2025-10-10,13:00,16:00
+Alumno,Juan Diaz,10022617-9,Geologia,L,45,2025-10-16,13:00,15:00
+Profesor,Juan Diaz,10003175-2,Jefe de carrera,M,56,2025-10-27,13:00,16:00
+Profesor,Andres Lopez,10016772-4,Docente,A,33,2025-10-23,13:00,16:00
+Alumno,Camila Lopez,10016761-7,Ingenieria Civil en Informatica e Innovacion Tecnologica,H,55,2025-10-23,8:00,9:00
+Profesor,Andres Torres,10007288-5,Docente,F,35,2025-10-17,14:00,16:00
+Alumno,Sofia Perez,10025538-6,Odontologia,E,52,2025-10-17,8:00,9:00
+Alumno,Valentina Diaz,10025346-5,Tecnologia Medica,H,63,2025-10-3,15:00,18:00
+Profesor,Felipe Perez,10025486-4,Docente,E,36,2025-10-11,08:00,11:00
+Alumno,Valentina Torres,10029432-9,Ingenieria Civil en Informatica e Innovacion Tecnologica,I,45,2025-10-16,13:00,16:00
+Alumno,Fernanda Gomez,10021414-1,Obstetricia,M,67,2025-10-4,14:00,17:00
+Alumno,Andres Rojas,10015983-4,Obstetricia,H,47,2025-10-12,12:00,14:00
+Alumno,Andres Diaz,10013186-8,Ingenieria Civil en Obras Civiles,F,35,2025-10-7,14:00,15:00
+Alumno,Andres Gomez,10031707-0,Bachillerato en Derecho: Ciencias Sociales y Humanidades,B,50,2025-10-4,14:00,16:00
+Alumno,Sofia Silva,10004290-1,Arquitectura,J,60,2025-10-8,17:00,20:00
+Profesor,Fernanda Gomez,10016978-8,Docente,A,62,2025-10-21,15:00,17:00
+Alumno,Fernanda Torres,10023961-4,Ingenieria Comercial,E,22,2025-10-22,9:00,10:00
+Profesor,Valentina Lopez,10009886-8,Docente,B,51,2025-10-06,09:00,11:00
+Alumno,Juan Gomez,10008990-4,Publicidad y Marketing,H,64,2025-10-17,16:00,18:00
+Alumno,Camila Rojas,10023536-6,Psicologia,D,49,2025-10-5,10:00,13:00
+Alumno,miaumua,2323232-2,Bachillerato en Diseno,C,202,2025-11-16,10:00,11:00
