@@ -1,0 +1,111 @@
+﻿<Window x:Class="Aplicacion_Ejemplo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="620" Width="1100"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFEEE9E9">
+
+    <Grid Background="#FFEEE9E9">
+
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Logo -->
+                <RowDefinition Height="Auto"/>
+                <!-- Título -->
+                <RowDefinition Height="Auto"/>
+                <!-- Subtítulo -->
+                <RowDefinition Height="Auto"/>
+                <!-- Correo -->
+                <RowDefinition Height="Auto"/>
+                <!-- Contraseña -->
+                <RowDefinition Height="Auto"/>
+                <!-- Iniciar Sesión -->
+                <RowDefinition Height="Auto"/>
+                <!-- Registrarse -->
+                <RowDefinition Height="Auto"/>
+                <!-- Ayuda -->
+            </Grid.RowDefinitions>
+
+            <!-- Fondo blanco -->
+            <Border Grid.RowSpan="8" Background="White" CornerRadius="20"
+                    BorderBrush="#FF636365" BorderThickness="2"
+                    Padding="40,20" Width="300" Margin="0,0,0,-60"/>
+
+            <!-- Logo -->
+            <Image x:Name="logo"
+                   Grid.Row="0"
+                   HorizontalAlignment="Center"
+                   Height="40" Width="40"
+                   Source="Logo_2.png"
+                   Margin="0,14,0,17"
+                   Grid.RowSpan="2"/>
+
+            <!-- Título -->
+            <TextBlock Grid.Row="1"
+                       Text="Mi Sala UDD"
+                       Foreground="#2244ED"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       HorizontalAlignment="Center"
+                       Margin="0,38,0,21"
+                       Grid.RowSpan="2"/>
+
+            <!-- Subtítulo -->
+            <TextBlock Grid.Row="2"
+                       TextAlignment="Center"
+                       Foreground="#837F7F"
+                       Margin="0,14,0,19"
+                       Grid.RowSpan="2">
+                Sistema de Gestión de Salas<LineBreak/>
+                Universidad del Desarrollo
+            </TextBlock>
+
+            <!-- Correo -->
+            <StackPanel Grid.Row="3" Margin="0,5">
+                <TextBlock Text="Correo Electrónico:" Width="198" Height="15"/>
+                <TextBox x:Name="txt_correo" Text="usuario@udd.cl"
+                         Width="200" TextChanged="Input_Correo"/>
+            </StackPanel>
+
+            <!-- Contraseña -->
+            <StackPanel Grid.Row="4" Margin="0,5">
+                <TextBlock Text="Contraseña:" Width="198" Height="16"/>
+                <PasswordBox x:Name="txt_contrasena"
+                 Width="200"
+                 PasswordChanged="Input_contasena"/>
+
+            </StackPanel>
+
+            <!-- Botón Iniciar sesión -->
+            <Button Grid.Row="5"
+                    x:Name="btnIniciarSesion"
+                    Content="Iniciar sesión"
+                    Width="200" Height="30"
+                    Background="#4C4AE6"
+                    Foreground="White"
+                    Margin="0,10,0,0"
+                    Click="BtnIniciarSesion_Click"/>
+
+            <!-- Botón Registrarse -->
+            <Button Grid.Row="6"
+                    x:Name="btnRegistro"
+                    Content="Registrarse"
+                    Width="200" Height="30"
+                    Background="#4C4AE6"
+                    Foreground="White"
+                    Margin="0,10,0,0"
+                    Click="BtnRegistro_Click"/>
+
+            <!-- Mensaje de ayuda -->
+            <StackPanel Grid.Row="7" Margin="0,10,0,0"
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Prueba con:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Alumno@udd.cl (Estudiantes)"/>
+                <TextBlock Text="Profesor@udd.cl (Profesores)" Height="14"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

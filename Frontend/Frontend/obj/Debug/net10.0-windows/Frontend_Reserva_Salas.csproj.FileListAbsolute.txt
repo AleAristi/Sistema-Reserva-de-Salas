@@ -1,0 +1,144 @@
+E:\miau3\proljflka\proljflka\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.exe
+E:\miau3\proljflka\proljflka\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.deps.json
+E:\miau3\proljflka\proljflka\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.runtimeconfig.json
+E:\miau3\proljflka\proljflka\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\proljflka\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\MainWindow.baml
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window1.baml
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window2.baml
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window3.baml
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window4.baml
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\MainWindow.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window1.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window2.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window3.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Window4.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\App.g.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas_MarkupCompile.cache
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.g.resources
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.GeneratedMSBuildEditorConfig.editorconfig
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfoInputs.cache
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfo.cs
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.CoreCompileInputs.cache
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\refint\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.genruntimeconfig.cache
+E:\miau3\proljflka\proljflka\obj\Debug\net10.0-windows\ref\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.exe
+E:\miau3\proljflka\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.deps.json
+E:\miau3\proljflka\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.runtimeconfig.json
+E:\miau3\proljflka\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\MainWindow.baml
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window1.baml
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window2.baml
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window3.baml
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window4.baml
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\MainWindow.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window1.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window2.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window3.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Window4.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\App.g.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas_MarkupCompile.cache
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.g.resources
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.GeneratedMSBuildEditorConfig.editorconfig
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfoInputs.cache
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfo.cs
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.CoreCompileInputs.cache
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\refint\Frontend_Reserva_Salas.dll
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.genruntimeconfig.cache
+E:\miau3\proljflka\Frontend\obj\Debug\net10.0-windows\ref\Frontend_Reserva_Salas.dll
+E:\miau3\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.exe
+E:\miau3\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.deps.json
+E:\miau3\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.runtimeconfig.json
+E:\miau3\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.baml
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.baml
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.baml
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.baml
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.baml
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\App.g.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas_MarkupCompile.cache
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.g.resources
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.GeneratedMSBuildEditorConfig.editorconfig
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfoInputs.cache
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfo.cs
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.CoreCompileInputs.cache
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\refint\Frontend_Reserva_Salas.dll
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.genruntimeconfig.cache
+E:\miau3\Frontend\Frontend\obj\Debug\net10.0-windows\ref\Frontend_Reserva_Salas.dll
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.exe
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.deps.json
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.runtimeconfig.json
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\App.g.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas_MarkupCompile.cache
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.g.resources
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.GeneratedMSBuildEditorConfig.editorconfig
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfoInputs.cache
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfo.cs
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.CoreCompileInputs.cache
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\refint\Frontend_Reserva_Salas.dll
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.genruntimeconfig.cache
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\ref\Frontend_Reserva_Salas.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.exe
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.deps.json
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.runtimeconfig.json
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.baml
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.baml
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.baml
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.baml
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window1.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window2.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window3.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Window4.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas_MarkupCompile.cache
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.g.resources
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfoInputs.cache
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.AssemblyInfo.cs
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.CoreCompileInputs.cache
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\refint\Frontend_Reserva_Salas.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.pdb
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.genruntimeconfig.cache
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\ref\Frontend_Reserva_Salas.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.AssemblyReference.cache
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
+C:\Users\phalc\OneDrive\Escritorio\Alejandro\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend.1B4E195B.Up2Date
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.csproj.AssemblyReference.cache
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend_Reserva_Salas.sourcelink.json
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Frontend.1B4E195B.Up2Date
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window5.baml
+E:\Salvar formateo\Universidad\bootcmap\Sistema de Reserva\Frontend\Frontend\obj\Debug\net10.0-windows\Window5.g.cs
