@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="logo.png" />
     <None Remove="Logo_2.png" />
   </ItemGroup>
 
@@ -23,9 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="logo.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Logo_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
