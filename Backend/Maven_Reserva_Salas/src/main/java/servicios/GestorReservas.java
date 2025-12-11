@@ -22,7 +22,8 @@ public class GestorReservas implements IGestorReservas {
         this.reservas = new ArrayList<>();
         loadJson();
     }
-
+    
+    // Carga del JSON de reservas
     private void loadJson() {
         try {
             if (Files.exists(reservasPath)) {
@@ -38,6 +39,7 @@ public class GestorReservas implements IGestorReservas {
         }
     }
 
+    // Guardado del JSON
     private void saveJson() {
         try {
             try (Writer w = Files.newBufferedWriter(reservasPath)) {
@@ -90,57 +92,58 @@ public class GestorReservas implements IGestorReservas {
     }
 
     // Fusion CSV -> JSON: mantiene UUID si ya existe, añade si no existe
-@Override
-public void cargarDatos(String ruta) throws IOException {
+    @Override
+    // Principalemente una alternativa, no fue usada finalmente
+    public void cargarDatos(String ruta) throws IOException {
 
-    List<Reserva> reservasCSV = LectorCSV.cargarReservas(ruta);
+        List<Reserva> reservasCSV = LectorCSV.cargarReservas(ruta);
 
-    int nuevas = 0;
+        int nuevas = 0;
 
-    for (Reserva rCSV : reservasCSV) {
+        for (Reserva rCSV : reservasCSV) {
 
-        boolean existe = reservas.stream().anyMatch(r ->
-                r.getPersona().getRut().equals(rCSV.getPersona().getRut()) &&
-                r.getEdificio().equals(rCSV.getEdificio()) &&
-                r.getSala().equals(rCSV.getSala()) &&
-                r.getFecha().equals(rCSV.getFecha()) &&
-                r.getHoraInicio().equals(rCSV.getHoraInicio())
-        );
+            boolean existe = reservas.stream().anyMatch(r ->
+                    r.getPersona().getRut().equals(rCSV.getPersona().getRut()) &&
+                    r.getEdificio().equals(rCSV.getEdificio()) &&
+                    r.getSala().equals(rCSV.getSala()) &&
+                    r.getFecha().equals(rCSV.getFecha()) &&
+                    r.getHoraInicio().equals(rCSV.getHoraInicio())
+            );
 
-        if (!existe) {
-            reservas.add(rCSV);
-            nuevas++;
+            if (!existe) {
+                reservas.add(rCSV);
+                nuevas++;
+            }
+        }
+
+        if (nuevas > 0) {
+            saveJson();
+            System.out.println("Reservas nuevas desde CSV: " + nuevas);
+        } else {
+            System.out.println("CSV no tenía reservas nuevas.");
         }
     }
 
-    if (nuevas > 0) {
-        saveJson();
-        System.out.println("Reservas nuevas desde CSV: " + nuevas);
-    } else {
-        System.out.println("CSV no tenía reservas nuevas.");
-    }
-}
+        private boolean equalsNullSafe(String a, String b) {
+            if (a == null && b == null) return true;
+            if (a == null || b == null) return false;
+            return a.equals(b);
+        }
 
-    private boolean equalsNullSafe(String a, String b) {
-        if (a == null && b == null) return true;
-        if (a == null || b == null) return false;
-        return a.equals(b);
-    }
+        private String normalizarHora(String h) {
+            if (h == null) return null;
+            String s = h.trim();
+            if (s.length() == 4 && s.charAt(1) == ':') s = "0" + s;
+            return s;
+        }
 
-    private String normalizarHora(String h) {
-        if (h == null) return null;
-        String s = h.trim();
-        if (s.length() == 4 && s.charAt(1) == ':') s = "0" + s;
-        return s;
-    }
+        @Override
+        public List<Reserva> getReservas() {
+            return reservas;
+        }
 
-    @Override
-    public List<Reserva> getReservas() {
-        return reservas;
+        // por si necesitas acceder a DatosStatic desde fuera
+        public DatosStatic getDatos() {
+            return datos;
+        }
     }
-
-    // por si necesitas acceder a DatosStatic desde fuera
-    public DatosStatic getDatos() {
-        return datos;
-    }
-}

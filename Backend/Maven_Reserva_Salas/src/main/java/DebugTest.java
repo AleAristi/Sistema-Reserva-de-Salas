@@ -13,34 +13,30 @@ public class DebugTest {
 
     public static void main(String[] args) {
 
-        System.out.println("=== DEBUG RESERVAS ===");
+        System.out.println("Debug de rutas, reservas, carga de archivos, union de bases de datos y funiconalidad de JSON");
 
-        // ---------- Ruta BASE ----------
+        // Mostrar la ruta del entorno actual
         String base = System.getProperty("user.dir");
         System.out.println("Working dir = " + base);
 
-        // ---------- Ruta dinámica del CSV ----------
+        // Mostrar ruta dinamica que se espera
         Path reservasCsvPath = Paths.get(base, "..", "..", "Generador", "Datos", "Reservas.csv");
         System.out.println("Ruta esperada CSV = " + reservasCsvPath.toAbsolutePath());
 
         // Cargar datos estáticos
         DatosStatic datos = new DatosStatic();
 
-        // Crear servicio autenticación
+        // Crear autenticacion para facilitar los tokens
         AuthService auth = new AuthService();
 
         // Crear el gestor que maneja JSON + CSV
         GestorReservas gestor = new GestorReservas(datos);
 
-        // -----------------------------
-        // Mostrar contenido JSON si existe
-        // -----------------------------
+        // Mostrar si el json existe
         System.out.println("\n=== JSON ACTUAL ===");
         gestor.mostrarReservas();
 
-        // -----------------------------
-        // Prueba lectura CSV
-        // -----------------------------
+        // Probar lectura de CSV
         System.out.println("\n=== Intentando cargar CSV ===");
 
         try {
@@ -51,9 +47,7 @@ public class DebugTest {
             System.out.println("ERROR cargando CSV: " + e.getMessage());
         }
 
-        // -----------------------------
-        // Crear una reserva de prueba
-        // -----------------------------
+        // Probar funcionalidad de reservas
         System.out.println("\n=== Agregando reserva de prueba ===");
 
         Persona alumnoTest = new Alumno("Test Alumno", "11111111-1", "Ingeniería");
@@ -72,9 +66,7 @@ public class DebugTest {
         System.out.println("\nReservas después de agregar:");
         gestor.mostrarReservas();
 
-        // -----------------------------
-        // Eliminar reserva recién creada
-        // -----------------------------
+        // Probar funcionalidad de eliminar reservas y borrar el intento de prueba de paso
         System.out.println("\n=== Intentando eliminar reserva por ID ===");
         boolean eliminado = gestor.eliminarReservaPorId(nueva.getId());
         System.out.println("Resultado eliminar: " + eliminado);

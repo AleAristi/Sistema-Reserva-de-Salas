@@ -12,20 +12,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("=== INICIANDO BACKEND RESERVA DE SALAS ===");
+        System.out.println("Backend MiSalaUDD");
 
-        // ---------- Ruta BASE ----------
+        // Ruta donde se encuentra actualmente en el entorno operado
         String base = System.getProperty("user.dir");
         System.out.println("Working dir = " + base);
 
-        // ---------- Rutas dinámicas ----------
+        // Rutas dinamicas para los archivos generados en el generador
         Path datosStaticPath = Paths.get(base, "..", "..", "Generador", "Datos", "DatosStatic.csv");
         Path reservasCsvPath = Paths.get(base, "..", "..", "Generador", "Datos", "Reservas.csv");
 
         System.out.println("Ruta DatosStatic = " + datosStaticPath.toAbsolutePath());
         System.out.println("Ruta Reservas = " + reservasCsvPath.toAbsolutePath());
 
-        // ---------- Validación archivos ----------
+        // Validaciones
         if (!Files.exists(datosStaticPath)) {
             System.out.println("ERROR: No se encontró DatosStatic.csv");
             return;
@@ -35,13 +35,13 @@ public class Main {
             System.out.println("ADVERTENCIA: No existe Reservas.csv (se cargará vacío).");
         }
 
-        // ---------- Cargar DatosStatic ----------
+        // Carga de datos permanentes
         DatosStatic datosStatic = LectorCSV.cargarDatosStatic(datosStaticPath.toString());
 
-        // ---------- Crear Gestor ----------
+        // Nuevo manejo de reservas
         GestorReservas gestor = new GestorReservas(datosStatic);
 
-        // ---------- Cargar CSV si existe ----------
+        // Respuesta del manejo de reservas
         try {
             if (Files.exists(reservasCsvPath)) {
                 gestor.cargarDatos(reservasCsvPath.toString());
@@ -53,7 +53,7 @@ public class Main {
             System.out.println("Error cargando CSV de reservas: " + e.getMessage());
         }
 
-        // ---------- Iniciar servicios ----------
+        // Inicio del servidor local
         AuthService auth = new AuthService();
 
         try {
@@ -67,9 +67,9 @@ public class Main {
             e.printStackTrace();
         }
 
-        // ---------- Mantener proceso vivo (FIX del exit 100) ----------
+        // Evitar cierre automatico del servidor local
         try {
-            System.out.println("Servidor ejecutándose... CTRL+C para detener.");
+            System.out.println("Servidor ejecutándose...");
             Thread.currentThread().join();
         } catch (InterruptedException ex) {
             System.out.println("Backend detenido.");

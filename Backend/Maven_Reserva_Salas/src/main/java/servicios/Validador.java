@@ -4,6 +4,9 @@
  */
 package servicios;
 
+
+// Clase usada previo al frontend para validar inputs
+
 public class Validador {
 
     public static boolean validarNombre(String nombre) {

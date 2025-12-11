@@ -12,12 +12,15 @@ import modelos.DatosStatic;
 
 import java.util.*;
 
+// Creacion de las peticiones para conectar Backend con el Frontend
+
 public class RestServerSpark {
     private final GestorReservas gestor;
     private final AuthService auth;
     private final DatosStatic datosStatic;
     private final Gson gson;
 
+    // Datos que tendra
     public RestServerSpark(GestorReservas gestor, AuthService auth, DatosStatic datosStatic) {
         this.gestor = gestor;
         this.auth = auth;
@@ -28,7 +31,7 @@ public class RestServerSpark {
     public void start(int port) {
         port(port);
 
-        // CORS
+        // Configuración inicial del servidor local para CORS (forma de conexion entre backend y frontend)
         options("/*", (req, res) -> {
             String acrh = req.headers("Access-Control-Request-Headers");
             if (acrh != null) res.header("Access-Control-Allow-Headers", acrh);
@@ -41,8 +44,13 @@ public class RestServerSpark {
             res.header("Access-Control-Allow-Origin", "*");
             res.type("application/json");
         });
-
-        // Ping
+        
+        
+        /// get, envia tokens del backend que consumira el frontend a peticion
+        /// post, envia tokens del frontend al backend que permite operar al backend con datos obtenidos desde el frontend
+        /// delete, permite la eliminacion de tokens solicitados
+ 
+        // Ping para validar salud del servidor
         get("/api/ping", (req, res) -> gson.toJson(Map.of("ok", true, "msg", "pong")));
 
         // Obtener reservas
@@ -212,14 +220,12 @@ public class RestServerSpark {
                         "usuario", u.getUsuario(),
                         "carreraOFuncion", u.getCarreraOFuncion()
                     ));
-
-
-
-    } catch (Exception ex) {
-        res.status(500);
-        return gson.toJson(Map.of("ok", false, "msg", ex.getMessage()));
-    }
-});
+                    
+            } catch (Exception ex) {
+                res.status(500);
+                return gson.toJson(Map.of("ok", false, "msg", ex.getMessage()));
+            }
+        });
 
 
         // Datos estáticos

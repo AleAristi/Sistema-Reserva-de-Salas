@@ -9,15 +9,13 @@ import java.lang.reflect.Type;
 import java.nio.file.*;
 import java.util.*;
 
-/**
- * Servicio simple de autenticacion:
- * - Guarda usuarios en usuarios.json
- * - Devuelve token UUID en login; sessions map token->usuario
- * - No hashing (simple) como pediste
- */
+// Permite crear un login
 public class AuthService {
+    //almacena los datos principales de un usuario en un json
     private final Path usuariosPath = Paths.get("usuarios.json");
     private final Gson gson = new Gson();
+    
+    // Estructura de datos para realizar busqueda eficiente de los usuarios
     private Map<String, Usuario> usuariosByUsuario = new HashMap<>();
     private Map<String, String> sessions = new HashMap<>(); // token -> usuario (username)
 
@@ -25,6 +23,7 @@ public class AuthService {
         loadUsers();
     }
 
+    // Carga la lista de usuarios del JSON
     private void loadUsers() {
         try {
             if (Files.exists(usuariosPath)) {
@@ -39,7 +38,8 @@ public class AuthService {
             System.out.println("Error leyendo usuarios.json: " + e.getMessage());
         }
     }
-
+    
+    // Permite actualizar la lista de usuarios del JSON
     private void saveUsers() {
         try (Writer w = Files.newBufferedWriter(usuariosPath)) {
             List<Usuario> lista = new ArrayList<>(usuariosByUsuario.values());
@@ -49,7 +49,7 @@ public class AuthService {
         }
     }
 
-    // Registro simple: usuario único y password > 3
+    // Registro de usuarios nuevos
     public boolean register(String usuario, String nombre, String rut, String carreraOFuncion, String tipo, String password) {
         if (usuario == null || usuario.trim().isEmpty()) return false;
         if (password == null || password.length() < 4) return false;
@@ -60,7 +60,7 @@ public class AuthService {
         return true;
     }
 
-    // Login simple -> token
+    // Inicio de sesion y asignacion de un identificador unico para cada usuario
     public String login(String usuario, String password) {
         Usuario u = usuariosByUsuario.get(usuario);
         if (u == null) return null;
@@ -69,13 +69,15 @@ public class AuthService {
         sessions.put(token, usuario);
         return token;
     }
-
+    
+    // Obtencion de datos de usuario por su identificador
     public Usuario getUsuarioPorToken(String token) {
         String usuario = sessions.get(token);
         if (usuario == null) return null;
         return usuariosByUsuario.get(usuario);
     }
-
+    
+    // Obtencion de datos por su nombre
     public Usuario getUsuarioPorNombre(String usuario) {
         return usuariosByUsuario.get(usuario);
     }

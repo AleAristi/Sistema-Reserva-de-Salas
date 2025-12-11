@@ -4,6 +4,7 @@ import modelos.*;
 import java.util.*;
 import java.io.*;
 
+// Escritura y modificacion de csv para armar una reserva
 public class CSVWriter {
     public static void guardarReservas(String ruta, List<Reserva> reservas){
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(ruta))){

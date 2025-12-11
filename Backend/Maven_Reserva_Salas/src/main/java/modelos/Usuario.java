@@ -1,12 +1,12 @@
 package modelos;
 
 public class Usuario {
-    private String usuario; // nombre de usuario (login)
+    private String usuario; // nombre de usuario (correo)
     private String nombre;  // nombre completo
     private String rut;
     private String carreraOFuncion;
     private String tipo; // "Alumno" o "Profesor"
-    private String password; // guardado en texto plano porque pediste simple
+    private String password;
 
     public Usuario(String usuario, String nombre, String rut, String carreraOFuncion, String tipo, String password) {
         this.usuario = usuario;
@@ -17,7 +17,7 @@ public class Usuario {
         this.password = password;
     }
 
-    // getters y setters (Gson los necesita)
+    // getters y setters para facilitar la creacion del JSON
     public String getUsuario() { return usuario; }
     public String getNombre() { return nombre; }
     public String getRut() { return rut; }

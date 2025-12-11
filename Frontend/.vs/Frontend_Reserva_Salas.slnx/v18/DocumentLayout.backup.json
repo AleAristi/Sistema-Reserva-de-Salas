@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B901887-2D8A-063E-72E3-249A535DFFCF}|Frontend\\Frontend_Reserva_Salas.csproj|e:\\salvar formateo\\universidad\\bootcmap\\sistema de reserva\\sistema-reserva-de-salas\\frontend\\frontend\\window5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B901887-2D8A-063E-72E3-249A535DFFCF}|Frontend\\Frontend_Reserva_Salas.csproj|solutionrelative:frontend\\window5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B901887-2D8A-063E-72E3-249A535DFFCF}|Frontend\\Frontend_Reserva_Salas.csproj|e:\\salvar formateo\\universidad\\bootcmap\\sistema de reserva\\sistema-reserva-de-salas\\frontend\\frontend\\window5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8B901887-2D8A-063E-72E3-249A535DFFCF}|Frontend\\Frontend_Reserva_Salas.csproj|solutionrelative:frontend\\window5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -63,18 +67,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Window5.xaml.cs",
+              "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window5.xaml.cs",
+              "RelativeDocumentMoniker": "Frontend\\Window5.xaml.cs",
+              "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window5.xaml.cs",
+              "RelativeToolTip": "Frontend\\Window5.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowIsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:13:32.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Window5.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window5.xaml",
               "RelativeDocumentMoniker": "Frontend\\Window5.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window5.xaml",
               "RelativeToolTip": "Frontend\\Window5.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T09:10:28.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T09:10:28.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Window4.xaml.cs",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window4.xaml.cs",
               "RelativeDocumentMoniker": "Frontend\\Window4.xaml.cs",
@@ -82,36 +98,33 @@
               "RelativeToolTip": "Frontend\\Window4.xaml.cs",
               "ViewState": "AgIAAAsBAAAAAAAAAAAiwBcBAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T08:55:41.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:55:41.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Window1.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window1.xaml",
               "RelativeDocumentMoniker": "Frontend\\Window1.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window1.xaml",
               "RelativeToolTip": "Frontend\\Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:51:29.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:51:29.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Frontend\\MainWindow.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\MainWindow.xaml",
               "RelativeToolTip": "Frontend\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:51:26.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:51:26.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Frontend\\MainWindow.xaml.cs",
@@ -119,36 +132,33 @@
               "RelativeToolTip": "Frontend\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T08:51:24.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:51:24.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\App.xaml",
               "RelativeDocumentMoniker": "Frontend\\App.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\App.xaml",
               "RelativeToolTip": "Frontend\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:51:00.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:51:00.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Window4.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window4.xaml",
               "RelativeDocumentMoniker": "Frontend\\Window4.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window4.xaml",
               "RelativeToolTip": "Frontend\\Window4.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:40:28.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:40:28.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Window1.xaml.cs",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window1.xaml.cs",
               "RelativeDocumentMoniker": "Frontend\\Window1.xaml.cs",
@@ -156,12 +166,11 @@
               "RelativeToolTip": "Frontend\\Window1.xaml.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwE4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T08:40:02.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:40:02.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Window2.xaml.cs",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window2.xaml.cs",
               "RelativeDocumentMoniker": "Frontend\\Window2.xaml.cs",
@@ -169,12 +178,11 @@
               "RelativeToolTip": "Frontend\\Window2.xaml.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwFQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T08:39:40.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:39:40.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Window3.xaml.cs",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window3.xaml.cs",
               "RelativeDocumentMoniker": "Frontend\\Window3.xaml.cs",
@@ -182,32 +190,29 @@
               "RelativeToolTip": "Frontend\\Window3.xaml.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAkwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T08:36:51.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:36:51.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Window3.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window3.xaml",
               "RelativeDocumentMoniker": "Frontend\\Window3.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window3.xaml",
               "RelativeToolTip": "Frontend\\Window3.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:29:26.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:29:26.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Window2.xaml",
               "DocumentMoniker": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window2.xaml",
               "RelativeDocumentMoniker": "Frontend\\Window2.xaml",
               "ToolTip": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Window2.xaml",
               "RelativeToolTip": "Frontend\\Window2.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-11T08:52:57.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T08:52:57.217Z"
             }
           ]
         }

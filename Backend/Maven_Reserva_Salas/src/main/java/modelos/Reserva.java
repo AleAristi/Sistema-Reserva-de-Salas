@@ -2,10 +2,7 @@ package modelos;
 
 import java.util.UUID;
 
-/**
- * Modelo Reserva con id como String (UUID).
- * Tiene constructor sin-args para que Gson pueda deserializar.
- */
+
 public class Reserva {
     private String id;
     private Persona persona;
@@ -15,7 +12,7 @@ public class Reserva {
     private String horaInicio;
     private String horaFin;
 
-    // Constructor principal usado en código
+    // Constructor principal
     public Reserva(Persona persona, String edificio, String sala, String fecha, String horaInicio, String horaFin) {
         this.id = UUID.randomUUID().toString();
         this.persona = persona;
@@ -26,12 +23,12 @@ public class Reserva {
         this.horaFin = horaFin;
     }
 
-    // Constructor vacío requerido por Gson
+    // Constructor vacío requerido por Gson en caso que el constructor sea nulo para evitar fallos
     public Reserva() {
-        // No generar id aquí: lo hacemos al acceder si está nulo para mantener compatibilidad
+
     }
 
-    // Asegura que siempre haya un id al obtenerlo
+    // Validacion existencia UUID (identificador unico)
     public String getId() {
         if (id == null || id.isEmpty()) {
             id = UUID.randomUUID().toString();
