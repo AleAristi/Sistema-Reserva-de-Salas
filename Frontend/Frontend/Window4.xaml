@@ -6,6 +6,7 @@
         Background="#F3F5F7"
         Loaded="Window_Loaded">
 
+    <!-- Medidas barra superior -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="56"/>
@@ -13,6 +14,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <!-- Barra superior -->
         <Grid Grid.Row="0" Background="#163C8F">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="220"/>
@@ -23,6 +25,7 @@
             <TextBlock Text="MISALA UDD" Foreground="White" VerticalAlignment="Center"
                        FontSize="15" FontWeight="Bold" Margin="16,0"/>
 
+            <!-- Botones -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
                         VerticalAlignment="Center" Grid.Column="1" Margin="10,0,0,0">
                 <Button x:Name="btn_inicio" Content="Inicio" Foreground="White" Background="Transparent" BorderThickness="0" Width="65" Cursor="Hand" Click="btn_inicio_Click"/>
@@ -35,7 +38,8 @@
                     Background="Transparent" BorderThickness="0" Margin="24,0,60,0"
                     VerticalAlignment="Center" Cursor="Hand" Grid.Column="2" Click="btn_logout_Click"/>
         </Grid>
-
+        
+        <!-- Encabezado -->
         <StackPanel Grid.Row="1" Margin="60,18,60,0">
             <TextBlock Text="Gestión de Reservas" FontSize="18" FontWeight="Bold" Foreground="#2B2F36" Margin="0,0,0,4"/>
             <TextBlock Text="Reserva salas y administra tus reservas" FontSize="12" Foreground="#7B8086"/>
@@ -45,16 +49,18 @@
             <Border Background="White" CornerRadius="8" BorderBrush="#E6E9EE" BorderThickness="1" Padding="20" HorizontalAlignment="Left" Width="920">
                 <StackPanel>
 
+                    <!-- Esta vista aparece tanto para personas que realizaran una reserva, como para admin -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
                         <Border x:Name="TabNueva" Background="#F6F7F9" CornerRadius="12" Padding="15,6" Margin="0,0,8,0" Cursor="Hand" MouseLeftButtonDown="TabNueva_Click">
                             <TextBlock x:Name="txtTabNueva" Text="Nueva Reserva" FontSize="13" FontWeight="Bold" Foreground="#2B2F36"/>
                         </Border>
-
+                        <!-- Esta vista es exclusiva de admin, permite ver todas las reservas y eliminar -->
                         <Border x:Name="TabTodas" Background="#EFEFF1" CornerRadius="12" Padding="15,6" Cursor="Hand" MouseLeftButtonDown="TabTodas_Click" Visibility="Collapsed">
                             <TextBlock x:Name="txtTabTodas" Text="Todas las Reservas" FontSize="13" Foreground="#7B8086"/>
                         </Border>
                     </StackPanel>
 
+                    <!-- Medidas para nuevas reservas -->
                     <StackPanel x:Name="ViewNuevaReserva">
                         <Grid Margin="0,8,0,20">
                             <Grid.ColumnDefinitions>
@@ -64,32 +70,40 @@
                                 <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
 
+                            <!-- ComboBox edificios -->
                             <StackPanel Grid.Column="0" Margin="0,0,12,0">
                                 <TextBlock Text="Edificio" FontSize="11" Foreground="#7B8086"/>
                                 <ComboBox x:Name="cb_edificio" Height="36" Margin="0,6,0,0" Padding="5"/>
                             </StackPanel>
 
+                            <!-- ComboBox sala -->
                             <StackPanel Grid.Column="1" Margin="0,0,12,0">
                                 <TextBlock Text="Sala" FontSize="11" Foreground="#7B8086"/>
                                 <ComboBox x:Name="cb_sala" Height="36" Margin="0,6,0,0" Padding="5"/>
                             </StackPanel>
 
+                            <!-- ComboBox fecha -->
                             <StackPanel Grid.Column="2" Margin="0,0,12,0">
                                 <TextBlock Text="Fecha" FontSize="11" Foreground="#7B8086"/>
                                 <ComboBox x:Name="cb_fecha" Height="36" Margin="0,6,0,0" Padding="5"/>
                             </StackPanel>
 
+                            <!-- ComboBox hora -->
                             <StackPanel Grid.Column="3">
                                 <TextBlock Text="Hora Inicio" FontSize="11" Foreground="#7B8086"/>
                                 <ComboBox x:Name="cb_hora" Height="36" Margin="0,6,0,0" Padding="5"/>
                             </StackPanel>
                         </Grid>
 
+                        <!-- Boton reservar -->
                         <Button x:Name="btn_crear" Click="btn_crear_Click" Content="Crear Reserva" Height="40" Background="#133B8A" Foreground="White" BorderThickness="0" Cursor="Hand" FontSize="14" FontWeight="SemiBold"/>
                     </StackPanel>
 
+                    <!-- Inicio vista todas las reservas (Exclusivo de Admin) -->
                     <Grid x:Name="ViewTodasReservas" Visibility="Collapsed" Height="350">
                         <DataGrid x:Name="dgReservas" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="Column" GridLinesVisibility="Horizontal" RowHeight="35">
+                            
+                            <!-- Uso de bindings para incorporar informacion que no se modificara-->
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="50"/>
                                 <DataGridTextColumn Header="Fecha" Binding="{Binding fecha}" Width="100"/>
@@ -99,10 +113,11 @@
                                 <DataGridTextColumn Header="Reservado Por" Binding="{Binding persona.nombre}" Width="150"/>
                                 <DataGridTextColumn Header="Tipo" Binding="{Binding persona.tipo}" Width="100"/>
 
+                                <!-- Creacion de boton para eliminar en cada reserva -->
                                 <DataGridTemplateColumn Width="80">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <Button Content="Eliminar" Background="#FF4444" Foreground="White" FontSize="10" Padding="5,2" BorderThickness="0" Click="BtnEliminar_Click" Tag="{Binding id}"/>
+                                            <Button Content="Eliminar" Background="#D24B4B" Foreground="White" FontSize="10" Padding="5,2" BorderThickness="0" Click="BtnEliminar_Click" Tag="{Binding id}"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>

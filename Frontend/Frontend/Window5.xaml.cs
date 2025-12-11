@@ -21,9 +21,7 @@ namespace Frontend_Reserva_Salas
             InitializeComponent();
         }
 
-        // =====================================
-        // Cargar CARRERAS
-        // =====================================
+        // Cargar las carreras desde la API
         private async void CargarCarreras()
         {
             try
@@ -48,9 +46,7 @@ namespace Frontend_Reserva_Salas
             }
         }
 
-        // =====================================
-        // Cargar FUNCIONES
-        // =====================================
+        // Cargar las funciones desde la API
         private async void CargarFunciones()
         {
             try
@@ -75,9 +71,7 @@ namespace Frontend_Reserva_Salas
             }
         }
 
-        // =====================================
-        // CAMBIO TIPO (Alumno / Profesor)
-        // =====================================
+        // Criterio de cambio en el ComboBox Tipo
         private void CbTipo_Changed(object sender, SelectionChangedEventArgs e)
         {
             if (cbTipo.SelectedItem is ComboBoxItem item)
@@ -97,9 +91,7 @@ namespace Frontend_Reserva_Salas
             }
         }
 
-        // =====================================
-        // BOTÓN REGISTRAR
-        // =====================================
+        // Creacion de nuevo usuario
         private async void BtnRegistrar_Click(object sender, RoutedEventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
@@ -107,15 +99,18 @@ namespace Frontend_Reserva_Salas
             string rut = txtRut.Text.Trim();
             string password = txtPassword.Password.Trim();
 
+            // Validaciones en caso que este vacio el ComboBox
             if (!(cbTipo.SelectedItem is ComboBoxItem itemTipo))
             {
                 MessageBox.Show("Debe seleccionar tipo de usuario.");
                 return;
             }
 
+            // Obtener valores
             string tipo = itemTipo.Content.ToString();
             string carreraOFuncion = cbCarreras.SelectedItem?.ToString();
 
+            // Validaciones
             if (string.IsNullOrEmpty(usuario) ||
                 string.IsNullOrEmpty(nombre) ||
                 string.IsNullOrEmpty(rut) ||
@@ -131,6 +126,7 @@ namespace Frontend_Reserva_Salas
                 return;
             }
 
+            // Estructuración del JSON
             var body = new
             {
                 usuario,
@@ -141,6 +137,7 @@ namespace Frontend_Reserva_Salas
                 password
             };
 
+            // Conversion a JSON y envio a la API con POST
             try
             {
                 var json = JsonConvert.SerializeObject(body);

@@ -54,8 +54,8 @@ namespace Aplicacion_Ejemplo
                     Session.Token = result.token;
                     Session.Nombre = result.nombre;
                     Session.Tipo = result.tipo;
-                    Session.Usuario = result.usuario;         // <--- AGREGAR
-                    Session.Carrera = result.carreraOFuncion; // <--- AGREGAR
+                    Session.Usuario = result.usuario;
+                    Session.Carrera = result.carreraOFuncion;
 
                     var ventana = new Window1();
                     ventana.Show();
@@ -83,8 +83,6 @@ namespace Aplicacion_Ejemplo
         {
 
         }
-
-        // FIRMA CORRECTA PARA PasswordBox
         private void Input_contasena(object sender, RoutedEventArgs e)
         {
         
@@ -92,7 +90,6 @@ namespace Aplicacion_Ejemplo
     }
 
     // Respuesta del API
-    // Respuesta del API (Actualizar para incluir carreraOFuncion)
     public class LoginResponse
     {
         public bool ok { get; set; }
@@ -101,16 +98,16 @@ namespace Aplicacion_Ejemplo
         public string nombre { get; set; }
         public string tipo { get; set; }
         public string usuario { get; set; }
-        public string carreraOFuncion { get; set; } // <--- AGREGAR ESTO
+        public string carreraOFuncion { get; set; }
     }
 
-    // Sesión global (Actualizar para incluir Carrera)
+    // Daros de la sesion
     public static class Session
     {
         public static string Token = "";
         public static string Nombre = "";
         public static string Tipo = "";
         public static string Usuario = "";
-        public static string Carrera = ""; // <--- AGREGAR ESTO
+        public static string Carrera = "";
     }
 }

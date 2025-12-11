@@ -17,6 +17,7 @@ namespace Aplicacion_Ejemplo
             };
         }
 
+        // Mostrar la lista de edificios
         public Window2(List<string> edificios)
         {
             InitializeComponent();
@@ -29,7 +30,8 @@ namespace Aplicacion_Ejemplo
             ventana.Show();
             this.Close();
         }
-
+        
+        // Cargar los edificios antes de entrar a la pagina (En este caso para recargar)
         private async void btn_edificio_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -72,16 +74,16 @@ namespace Aplicacion_Ejemplo
 
         private void btn_logout_Click(object sender, RoutedEventArgs e)
         {
+            Session.Token = "";
+            Session.Nombre = "";
+            Session.Tipo = "";
+            Session.Usuario = "";
+            Session.Carrera = "";
+
             var ventana = new MainWindow();
             ventana.Show();
             this.Close();
         }
     }
 
-    public class ApiResponse<T>
-    {
-        public bool ok { get; set; }
-        public string msg { get; set; }
-        public T data { get; set; }
-    }
 }

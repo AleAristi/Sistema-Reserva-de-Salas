@@ -6,13 +6,15 @@
         Background="#F3F5F7">
 
     <Grid>
+        <!-- Medidas -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="56"/>
             <!-- Barra superior -->
+            <RowDefinition Height="56"/>
+            <!-- Encabezado -->
             <RowDefinition Height="Auto"/>
-            <!-- Header -->
-            <RowDefinition Height="*"/>
             <!-- Contenido -->
+            <RowDefinition Height="*"/>
+            
         </Grid.RowDefinitions>
 
         <!-- Barra superior -->
@@ -60,18 +62,17 @@
                        Foreground="#7B8086"/>
         </StackPanel>
 
-        <!-- Contenido -->
+        <!-- Medidas para sujetar y mantener en su posicion los datos al cambiar el tamaño de la ventana -->
         <Grid Grid.Row="2" Margin="60,24,60,24">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="260"/>
-                <!-- Tarjeta foto -->
-                <ColumnDefinition Width="24"/>
                 <!-- Separador -->
+                <ColumnDefinition Width="24"/>
+                <!-- Info -->
                 <ColumnDefinition Width="*"/>
-                <!-- Tarjeta info -->
+                
             </Grid.ColumnDefinitions>
 
-            <!-- Tarjeta INFORMACIÓN -->
+            <!-- Tabla de Datos -->
             <Border Background="White" CornerRadius="8" BorderBrush="#E6E9EE"
                     BorderThickness="1" Padding="20" VerticalAlignment="Center"
                     MinHeight="230" MaxWidth="720" Grid.ColumnSpan="3"
@@ -80,6 +81,7 @@
                     <TextBlock Text="Información Personal" FontSize="14"
                                FontWeight="Bold" Foreground="#2B2F36" Margin="0,0,0,10"/>
                     <Grid>
+                        <!-- Medidas tabla de datos -->
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
@@ -91,6 +93,8 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
+                        <!-- Lo siguiente usa Binding para poder transferir y actualizar los datos directo del login y api en una categoria definida -->
+                        
                         <!-- Nombre -->
                         <TextBlock Text="Nombre Completo" FontSize="11"
                                    Foreground="#7B8086" Grid.Row="0" Grid.Column="0"/>

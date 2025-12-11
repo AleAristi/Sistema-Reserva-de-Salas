@@ -6,13 +6,16 @@
         Background="#F3F5F7">
 
     <Grid>
+        <!-- medidas -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="48"/>
             <!-- barra superior -->
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="48"/>
+            
             <!-- encabezado -->
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            
             <!-- contenido -->
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Barra superior -->
@@ -104,7 +107,7 @@
                        Foreground="#7B8086"/>
         </StackPanel>
 
-        <!-- Tarjeta Edificios (CORREGIDA Y ALINEADA) -->
+        <!-- Lista de edificios -->
         <Grid Grid.Row="2" Margin="40,20,40,20">
             <Border Background="White"
                     CornerRadius="6"
@@ -116,9 +119,9 @@
                 <StackPanel>
 
                     <ListBox x:Name="listEdificios"
-             FontSize="18"
-             HorizontalAlignment="Stretch"
-             VerticalAlignment="Stretch" />
+                             FontSize="18"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch" />
                 </StackPanel>
             </Border>
         </Grid>

@@ -10,7 +10,6 @@
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
                 <!-- Logo -->
                 <RowDefinition Height="Auto"/>
                 <!-- Titulo -->
@@ -30,6 +29,7 @@
                 <!-- Password -->
                 <RowDefinition Height="Auto"/>
                 <!-- Boton Registrar -->
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <!-- Fondo -->
@@ -42,7 +42,7 @@
                    Width="40" Height="40" Source="Logo_2.png"
                    Margin="0,21,0,10" RenderTransformOrigin="0.583,1.771"/>
 
-            <!-- Título -->
+            <!-- Titulo -->
             <TextBlock Grid.Row="1" Text="Crear Cuenta"
                        Foreground="#2244ED" FontSize="16" FontWeight="SemiBold"
                        HorizontalAlignment="Center" Margin="0,21,0,0" Height="20" VerticalAlignment="Top"/>
@@ -82,20 +82,20 @@
                 </ComboBox>
             </StackPanel>
 
-            <!-- Carrera o Función -->
+            <!-- Carrera o Funcion -->
             <StackPanel Grid.Row="7" Margin="0,5">
                 <TextBlock x:Name="lblCarreraFuncion" Text="Carrera:" Width="199"/>
                 <ComboBox x:Name="cbCarreras" Width="200"/>
             </StackPanel>
 
 
-            <!-- Password -->
+            <!-- Contraseña -->
             <StackPanel Grid.Row="8" Margin="0,5">
                 <TextBlock Text="Contraseña:" Width="199"/>
                 <PasswordBox x:Name="txtPassword" Width="200"/>
             </StackPanel>
 
-            <!-- Botón Registrar -->
+            <!-- Boton Registrar -->
             <Button Grid.Row="9" Content="Registrar"
                     Width="200" Height="30" Margin="0,10,0,0"
                     Background="#4C4AE6" Foreground="White"

@@ -14,7 +14,6 @@ namespace Aplicacion_Ejemplo
 {
     public partial class Window4 : Window
     {
-        // Configuración de la API
         public static class Api
         {
             public static readonly HttpClient Client = new HttpClient
@@ -30,14 +29,14 @@ namespace Aplicacion_Ejemplo
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // 1. Configurar el Token de sesión en el Header para todas las llamadas
+            // Validacion para el API
             if (!string.IsNullOrEmpty(Session.Token))
             {
                 Api.Client.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Bearer", Session.Token);
             }
 
-            // 2. Controlar visibilidad de pestañas según rol
+            // Visibilidad de pestañas según rol
             if (Session.Tipo == "Admin")
             {
                 TabTodas.Visibility = Visibility.Visible;
@@ -46,8 +45,6 @@ namespace Aplicacion_Ejemplo
             {
                 TabTodas.Visibility = Visibility.Collapsed;
             }
-
-            // 3. Cargar datos iniciales
             CargarListas();
         }
 
@@ -73,7 +70,7 @@ namespace Aplicacion_Ejemplo
                     if (result.ok) cb_sala.ItemsSource = result.data;
                 }
 
-                // Generar Fechas (Próximos 30 días)
+                // Lista de fechas (No hay necesidad de validar si existen reservas para la fecha, el backend ya lo realiza)
                 List<string> fechas = new List<string>();
                 DateTime hoy = DateTime.Now;
                 for (int i = 0; i < 30; i++)
@@ -83,7 +80,7 @@ namespace Aplicacion_Ejemplo
                 cb_fecha.ItemsSource = fechas;
                 cb_fecha.SelectedIndex = 0;
 
-                // Generar Horas (08:00 a 21:00)
+                // Lista de horas (No hay necesidad de validar si existen reservas para la hora, el backend ya lo realiza)
                 List<string> horas = new List<string>();
                 for (int i = 8; i <= 21; i++)
                 {
@@ -97,10 +94,10 @@ namespace Aplicacion_Ejemplo
             }
         }
 
-        // --- CREAR RESERVA (Conectado a la API) ---
+        // Creacion de reserva
         private async void btn_crear_Click(object sender, RoutedEventArgs e)
         {
-            // Validar campos
+            // Validacion de nulos
             if (cb_edificio.SelectedItem == null || cb_sala.SelectedItem == null ||
                 cb_fecha.SelectedItem == null || cb_hora.SelectedItem == null)
             {
@@ -110,14 +107,13 @@ namespace Aplicacion_Ejemplo
 
             try
             {
-                // Crear objeto JSON exacto como lo espera el Backend Java
+                // Armar JSON que recibira atravez de POST el backend, usuario, rut y carrera vienen de los datos almacenados al iniciar sesion (Session)
                 var nuevaReserva = new
                 {
                     edificio = cb_edificio.SelectedItem.ToString(),
                     sala = cb_sala.SelectedItem.ToString(),
                     fecha = cb_fecha.SelectedItem.ToString(),
                     horaInicio = cb_hora.SelectedItem.ToString()
-                    // Nota: No enviamos usuario ni carrera, el backend lo saca del Token
                 };
 
                 string json = JsonConvert.SerializeObject(nuevaReserva);
@@ -127,18 +123,18 @@ namespace Aplicacion_Ejemplo
                 var response = await Api.Client.PostAsync("/api/reservas", content);
                 var respStr = await response.Content.ReadAsStringAsync();
 
-                // Usamos dynamic para leer la respuesta flexiblemente
+                // Manejo de errores atravez de los codigos de estado de API
                 dynamic result = JsonConvert.DeserializeObject(respStr);
 
                 if (response.IsSuccessStatusCode && (bool)result.ok)
                 {
                     MessageBox.Show($"¡Reserva creada con éxito!\nID: {result.reservaId}", "Éxito");
 
-                    // Limpiar selección
+                    // Deselecciona la reserva despues de realizarse existosamente
                     cb_edificio.SelectedIndex = -1;
                     cb_sala.SelectedIndex = -1;
 
-                    // Si estamos viendo la lista, actualizarla
+                    // Si es admin, actualizar la lista para mostrar la nueva reserva
                     if (ViewTodasReservas.Visibility == Visibility.Visible)
                         CargarTodasLasReservas();
                 }
@@ -154,13 +150,14 @@ namespace Aplicacion_Ejemplo
             }
         }
 
-        // --- GESTIÓN DE PESTAÑAS ---
+        // Mostrar pagina para crear reserva
         private void TabNueva_Click(object sender, MouseButtonEventArgs e)
         {
             ViewNuevaReserva.Visibility = Visibility.Visible;
             ViewTodasReservas.Visibility = Visibility.Collapsed;
         }
 
+        // Mostrar pagina con todas las reservas (Solo Admin)
         private void TabTodas_Click(object sender, MouseButtonEventArgs e)
         {
             ViewNuevaReserva.Visibility = Visibility.Collapsed;
@@ -169,7 +166,7 @@ namespace Aplicacion_Ejemplo
             CargarTodasLasReservas();
         }
 
-        // --- ADMINISTRACIÓN (Solo Admin) ---
+        // Administracion y visualizacion de todas las reservas
         private async void CargarTodasLasReservas()
         {
             try
@@ -205,7 +202,8 @@ namespace Aplicacion_Ejemplo
                 var response = await Api.Client.DeleteAsync($"/api/reservas/{id}");
                 if (response.IsSuccessStatusCode)
                 {
-                    CargarTodasLasReservas(); // Recargar tabla
+                    // Actualizar la lista de reservas
+                    CargarTodasLasReservas();
                 }
                 else
                 {
@@ -218,8 +216,10 @@ namespace Aplicacion_Ejemplo
             }
         }
 
-        // --- NAVEGACIÓN ---
+        // Botones barra navegacion
         private void btn_inicio_Click(object sender, RoutedEventArgs e) { new Window1().Show(); this.Close(); }
+
+        // Cargar lista de edificios desde el API antes de mostrar la ventana
         private async void btn_edificio_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -245,12 +245,28 @@ namespace Aplicacion_Ejemplo
                 MessageBox.Show("Error connecting to API: " + ex.Message);
             }
         }
-        private void btn_reserva_Click(object sender, RoutedEventArgs e) { /* Ya estamos aquí */ }
-        private void btn_perfil_Click(object sender, RoutedEventArgs e) { new Window3().Show(); this.Close(); }
-        private void btn_logout_Click(object sender, RoutedEventArgs e) { Session.Token = ""; new MainWindow().Show(); this.Close(); }
+        private void btn_reserva_Click(object sender, RoutedEventArgs e) 
+        {
+            }
+        private void btn_perfil_Click(object sender, RoutedEventArgs e) 
+        { 
+            new Window3().Show(); 
+            this.Close(); 
+        }
+        private void btn_logout_Click(object sender, RoutedEventArgs e) 
+        {
+            // Limpieza de datos
+            Session.Token = "";
+            Session.Nombre = "";
+            Session.Tipo = "";
+            Session.Usuario = "";
+            Session.Carrera = "";
+            new MainWindow().Show(); 
+            this.Close(); 
+        }
     }
 
-    // --- CLASES DE MODELO ---
+    // Categorias para los bindigs de reservas
     public class ReservaModel
     {
         public string id { get; set; }
@@ -260,7 +276,8 @@ namespace Aplicacion_Ejemplo
         public string horaInicio { get; set; }
         public PersonaModel persona { get; set; }
     }
-
+    
+    // Permite expandir el modelo para las reservas y realizar el criteio de admin
     public class PersonaModel
     {
         public string nombre { get; set; }

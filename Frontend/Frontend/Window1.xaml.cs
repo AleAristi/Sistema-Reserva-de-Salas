@@ -31,6 +31,7 @@ namespace Aplicacion_Ejemplo
             this.Close();
         }
 
+        // Para el boton de edificios llamo a la api para cargar la lista y no tener problemas de visualizacion
         private async void btn_edificios_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -70,6 +71,8 @@ namespace Aplicacion_Ejemplo
             Session.Token = "";
             Session.Nombre = "";
             Session.Tipo = "";
+            Session.Usuario = "";
+            Session.Carrera = "";
 
             var ventana = new MainWindow();
             ventana.Show();

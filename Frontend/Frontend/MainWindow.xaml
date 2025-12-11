@@ -10,7 +10,6 @@
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
                 <!-- Logo -->
                 <RowDefinition Height="Auto"/>
                 <!-- Título -->
@@ -21,11 +20,13 @@
                 <RowDefinition Height="Auto"/>
                 <!-- Contraseña -->
                 <RowDefinition Height="Auto"/>
-                <!-- Iniciar Sesión -->
+                <!-- Iniciar Sesion -->
                 <RowDefinition Height="Auto"/>
                 <!-- Registrarse -->
                 <RowDefinition Height="Auto"/>
                 <!-- Ayuda -->
+                <RowDefinition Height="Auto"/>
+                
             </Grid.RowDefinitions>
 
             <!-- Fondo blanco -->
@@ -58,8 +59,7 @@
                        Foreground="#837F7F"
                        Margin="0,14,0,19"
                        Grid.RowSpan="2">
-                Sistema de Gestión de Salas<LineBreak/>
-                Universidad del Desarrollo
+                Sistema de Gestión de Salas<LineBreak/>Universidad del Desarrollo
             </TextBlock>
 
             <!-- Correo -->

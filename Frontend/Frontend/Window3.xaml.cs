@@ -6,12 +6,9 @@ using System.Windows;
 
 namespace Aplicacion_Ejemplo
 {
-    /// <summary>
-    /// Lógica de interacción para Window3.xaml
-    /// </summary>
     public partial class Window3 : Window
     {
-        // Clase auxiliar para vincular los datos con el XAML
+        //Categoria definida para los bindings
         public class PerfilUsuario
         {
             public string Nombre { get; set; }
@@ -20,7 +17,6 @@ namespace Aplicacion_Ejemplo
             public string Tipo { get; set; }
         }
 
-        // Cliente HTTP (mantenemos tu estructura original)
         public static class Api
         {
             public static readonly HttpClient Client = new HttpClient
@@ -37,20 +33,17 @@ namespace Aplicacion_Ejemplo
 
         private void CargarDatosPerfil()
         {
-            // Creamos el objeto con los datos guardados en la Sesión estática
             var perfil = new PerfilUsuario
             {
                 Nombre = Session.Nombre,
-                Carrera = Session.Carrera, // Ahora Session.Carrera tendrá valor
+                Carrera = Session.Carrera,
                 Usuario = Session.Usuario,
                 Tipo = Session.Tipo
             };
-
-            // Asignamos al DataContext para que el XAML lo muestre
             this.DataContext = perfil;
         }
 
-        // --- Navegación ---
+        // Barra superior
 
         private void btn_inicio_Click(object sender, RoutedEventArgs e)
         {
@@ -59,6 +52,7 @@ namespace Aplicacion_Ejemplo
             this.Close();
         }
 
+        // Cargar edificios desde la api previo a abrir la ventana
         private async void btn_edificio_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -95,12 +89,12 @@ namespace Aplicacion_Ejemplo
 
         private void btn_perfil_Click(object sender, RoutedEventArgs e)
         {
-            // Ya estamos en perfil
+
         }
 
         private void btn_logout_Click(object sender, RoutedEventArgs e)
         {
-            // Limpiamos la sesión al salir
+            // Limpieza de datos
             Session.Token = "";
             Session.Nombre = "";
             Session.Tipo = "";

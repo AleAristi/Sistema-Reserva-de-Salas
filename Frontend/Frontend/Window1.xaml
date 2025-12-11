@@ -6,16 +6,12 @@
         Background="#F3F5F7">
 
     <Grid>
-
-        <!-- ====== FILAS ====== -->
         <Grid.RowDefinitions>
             <RowDefinition Height="140"/>
-            <!-- Encabezado más alto para evitar que tape -->
             <RowDefinition Height="*"/>
-            <!-- Tarjeta central -->
         </Grid.RowDefinitions>
-
-        <!-- ====== ENCABEZADO ====== -->
+        
+        <!-- Titulo y bienvenida -->
         <StackPanel Grid.Row="0"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
@@ -45,7 +41,7 @@
                        Margin="0,0,0,0"/>
         </StackPanel>
 
-        <!-- ====== TARJETA ====== -->
+        <!-- Botones Ordenados -->
         <Grid Grid.Row="1" HorizontalAlignment="Center">
 
             <Border Background="White"
@@ -68,7 +64,7 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <!-- TITULOS -->
+                    <!-- Enunciados -->
                     <TextBlock Grid.Row="0"
                                Text="Acceso Rápido"
                                FontSize="15"
@@ -82,7 +78,7 @@
                                Foreground="#7B8086"
                                Margin="0,0,0,15"/>
 
-                    <!-- BOTÓN INICIO -->
+                    <!-- Boton inicio (lleva a la misma pagina) -->
                     <Button x:Name="btn_inicio"
                             Grid.Row="3"
                             Height="40"
@@ -99,7 +95,7 @@
                         </Border>
                     </Button>
 
-                    <!-- BOTÓN VER EDIFICIOS -->
+                    <!-- Boton para la vista de edificios -->
                     <Button x:Name="btn_edificios"
                             Grid.Row="4"
                             Height="40"
@@ -115,7 +111,7 @@
                         </Border>
                     </Button>
 
-                    <!-- BOTÓN RESERVAS -->
+                    <!-- Boton reservas -->
                     <Button x:Name="btn_reservas"
                             Grid.Row="5"
                             Height="40"
@@ -131,7 +127,7 @@
                         </Border>
                     </Button>
 
-                    <!-- BOTÓN PERFIL -->
+                    <!-- Boton perfil -->
                     <Button x:Name="btn_perfil"
                             Grid.Row="6"
                             Height="40"
@@ -147,7 +143,7 @@
                         </Border>
                     </Button>
 
-                    <!-- BOTÓN LOGOUT -->
+                    <!-- boton logout -->
                     <Button x:Name="btn_logout"
                             Grid.Row="7"
                             Height="40"
