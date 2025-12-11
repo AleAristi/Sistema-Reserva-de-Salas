@@ -29,7 +29,7 @@ int main() {
                     break;
                 }
 
-                FILE *archivo = fopen("Reservas.csv", "w");
+                FILE *archivo = fopen("../Datos/Reservas.csv", "w");
                 if (archivo == NULL) {
                     printf("Error al crear archivo\n");
                     break;
