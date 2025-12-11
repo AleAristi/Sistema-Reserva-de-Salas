@@ -50,10 +50,12 @@ namespace Aplicacion_Ejemplo
 
                 if (response.IsSuccessStatusCode && result.ok)
                 {
-                    // Guardar token y nombre del usuario
+                    // Guardar token y datos del usuario
                     Session.Token = result.token;
                     Session.Nombre = result.nombre;
                     Session.Tipo = result.tipo;
+                    Session.Usuario = result.usuario;         // <--- AGREGAR
+                    Session.Carrera = result.carreraOFuncion; // <--- AGREGAR
 
                     var ventana = new Window1();
                     ventana.Show();
@@ -90,6 +92,7 @@ namespace Aplicacion_Ejemplo
     }
 
     // Respuesta del API
+    // Respuesta del API (Actualizar para incluir carreraOFuncion)
     public class LoginResponse
     {
         public bool ok { get; set; }
@@ -98,14 +101,16 @@ namespace Aplicacion_Ejemplo
         public string nombre { get; set; }
         public string tipo { get; set; }
         public string usuario { get; set; }
+        public string carreraOFuncion { get; set; } // <--- AGREGAR ESTO
     }
 
-    // Sesión global
+    // Sesión global (Actualizar para incluir Carrera)
     public static class Session
     {
         public static string Token = "";
         public static string Nombre = "";
         public static string Tipo = "";
         public static string Usuario = "";
+        public static string Carrera = ""; // <--- AGREGAR ESTO
     }
 }

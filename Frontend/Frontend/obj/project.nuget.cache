@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uoDF5lCedVI=",
+  "dgSpecHash": "3uMrnN+d8aw=",
   "success": true,
-  "projectFilePath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
+  "projectFilePath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paris\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],

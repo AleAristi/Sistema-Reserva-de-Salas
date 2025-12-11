@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj": {}
+    "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj": {}
   },
   "projects": {
-    "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj": {
+    "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
+        "projectUniqueName": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
         "projectName": "Frontend_Reserva_Salas",
-        "projectPath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
+        "projectPath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\Frontend_Reserva_Salas.csproj",
         "packagesPath": "C:\\Users\\paris\\.nuget\\packages\\",
-        "outputPath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Frontend\\Frontend\\obj\\",
+        "outputPath": "E:\\Salvar formateo\\Universidad\\bootcmap\\Sistema de Reserva\\Sistema-Reserva-de-Salas\\Frontend\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paris\\AppData\\Roaming\\NuGet\\NuGet.Config",

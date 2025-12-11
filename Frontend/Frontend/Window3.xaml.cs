@@ -2,15 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Aplicacion_Ejemplo
 {
@@ -19,6 +11,16 @@ namespace Aplicacion_Ejemplo
     /// </summary>
     public partial class Window3 : Window
     {
+        // Clase auxiliar para vincular los datos con el XAML
+        public class PerfilUsuario
+        {
+            public string Nombre { get; set; }
+            public string Carrera { get; set; }
+            public string Usuario { get; set; }
+            public string Tipo { get; set; }
+        }
+
+        // Cliente HTTP (mantenemos tu estructura original)
         public static class Api
         {
             public static readonly HttpClient Client = new HttpClient
@@ -30,7 +32,25 @@ namespace Aplicacion_Ejemplo
         public Window3()
         {
             InitializeComponent();
+            CargarDatosPerfil();
         }
+
+        private void CargarDatosPerfil()
+        {
+            // Creamos el objeto con los datos guardados en la Sesión estática
+            var perfil = new PerfilUsuario
+            {
+                Nombre = Session.Nombre,
+                Carrera = Session.Carrera, // Ahora Session.Carrera tendrá valor
+                Usuario = Session.Usuario,
+                Tipo = Session.Tipo
+            };
+
+            // Asignamos al DataContext para que el XAML lo muestre
+            this.DataContext = perfil;
+        }
+
+        // --- Navegación ---
 
         private void btn_inicio_Click(object sender, RoutedEventArgs e)
         {
@@ -46,9 +66,10 @@ namespace Aplicacion_Ejemplo
                 var response = await Api.Client.GetAsync("/api/edificios");
                 var json = await response.Content.ReadAsStringAsync();
 
+                // Asegúrate de usar tu clase ApiResponse definida en el proyecto
                 var result = JsonConvert.DeserializeObject<ApiResponse<List<string>>>(json);
 
-                if (result.ok)
+                if (result != null && result.ok)
                 {
                     var ventana = new Window2(result.data);
                     ventana.Show();
@@ -56,12 +77,12 @@ namespace Aplicacion_Ejemplo
                 }
                 else
                 {
-                    MessageBox.Show("Error: " + result.msg);
+                    MessageBox.Show("Error al obtener edificios: " + (result?.msg ?? "Error desconocido"));
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error connecting to API: " + ex.Message);
+                MessageBox.Show("Error de conexión: " + ex.Message);
             }
         }
 
@@ -74,17 +95,21 @@ namespace Aplicacion_Ejemplo
 
         private void btn_perfil_Click(object sender, RoutedEventArgs e)
         {
-            var ventana = new Window3();
-            ventana.Show();
-            this.Close();
+            // Ya estamos en perfil
         }
 
         private void btn_logout_Click(object sender, RoutedEventArgs e)
         {
+            // Limpiamos la sesión al salir
+            Session.Token = "";
+            Session.Nombre = "";
+            Session.Tipo = "";
+            Session.Usuario = "";
+            Session.Carrera = "";
+
             var ventana = new MainWindow();
             ventana.Show();
             this.Close();
         }
     }
-
 }
