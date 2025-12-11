@@ -1,21 +1,21 @@
 tipo_persona,nombre,rut,funcion_o_carrera,edificio,sala,fecha,hora_inicio,hora_fin
-Profesor,Sofia Lopez,10005975-9,Investigador,K,22,2025-10-13,16:00,17:00
-Profesor,Sofia Perez,10014513-4,Investigador,F,32,2025-10-10,08:00,10:00
-Profesor,Sofia Torres,10007115-2,Investigador,A,32,2025-10-16,16:00,18:00
-Profesor,Andres Diaz,10021590-1,Jefe de carrera,L,40,2025-10-13,10:00,13:00
-Profesor,Matias Silva,10025697-3,Investigador,E,42,2025-10-19,15:00,16:00
-Profesor,Andres Gomez,10010371-4,Investigador,M,34,2025-10-05,13:00,16:00
-Alumno,Camila Gomez,10003854-5,Geologia,G,39,2025-10-9,16:00,19:00
-Profesor,Matias Soto,10028768-0,Jefe de carrera,J,66,2025-10-16,17:00,19:00
-Profesor,Sofia Lopez,10024126-0,Docente,K,53,2025-10-15,13:00,16:00
-Alumno,Valentina Torres,10023860-4,Bachillerato en Psicologia,D,53,2025-10-17,11:00,12:00
-Profesor,Camila Soto,10008798-9,Docente,H,47,2025-10-10,14:00,15:00
-Alumno,Fernanda Lopez,10009016-0,Pedagogia en Educacion Basica con Menciones: Ingles y Educacion Especial e Inclusion,F,39,2025-10-18,13:00,15:00
-Profesor,Valentina Rojas,10027372-8,Investigador,H,58,2025-10-02,13:00,15:00
-Profesor,Juan Silva,10009174-2,Jefe de carrera,F,45,2025-10-05,08:00,11:00
-Alumno,Fernanda Soto,10025271-7,Ingenieria Civil Industrial Doble Titulacion,C,57,2025-10-21,10:00,12:00
-Profesor,Camila Lopez,10026606-7,Docente,L,33,2025-10-06,15:00,17:00
-Profesor,Valentina Lopez,10005200-6,Jefe de carrera,K,26,2025-10-03,09:00,11:00
-Profesor,Valentina Diaz,10023304-6,Investigador,B,32,2025-10-12,08:00,9:00
-Alumno,Felipe Silva,10002781-1,Ingenieria Civil en Obras Civiles,D,23,2025-10-19,10:00,13:00
-Alumno,Matias Perez,10019571-8,Diseno,J,52,2025-10-8,10:00,11:00
+Profesor,Felipe Rojas,10015186-8,Docente,M,61,2025-10-07,15:00,17:00
+Profesor,Andres Lopez,10010816-3,Investigador,C,57,2025-10-08,17:00,19:00
+Alumno,Juan Rojas,10013332-5,Ingenieria Civil Industrial Doble Titulacion,D,64,2025-10-13,11:00,13:00
+Profesor,Felipe Torres,10003441-7,Docente,G,36,2025-10-12,12:00,13:00
+Profesor,Matias Silva,10004771-8,Docente,G,28,2025-10-03,10:00,13:00
+Profesor,Sofia Perez,10032436-7,Jefe de carrera,H,31,2025-10-15,15:00,17:00
+Alumno,Sofia Silva,10028854-9,Derecho,F,45,2025-10-25,8:00,10:00
+Profesor,Matias Perez,10032629-9,Docente,K,64,2025-10-26,15:00,16:00
+Alumno,Fernanda Silva,10014825-0,Global Business Administration,F,51,2025-10-6,14:00,15:00
+Alumno,Sofia Soto,10000007-8,Pedagogia en Educacion Basica con Menciones: Ingles y Educacion Especial e Inclusion,F,38,2025-10-24,9:00,10:00
+Profesor,Camila Silva,10012068-7,Jefe de carrera,A,50,2025-10-26,16:00,19:00
+Alumno,Matias Perez,10029080-2,Enfermeria,J,52,2025-10-18,14:00,15:00
+Alumno,Fernanda Perez,10017795-5,Quimica y Farmacia,F,59,2025-10-27,11:00,12:00
+Alumno,Sofia Silva,10014769-5,Bachillerato en Psicologia,K,25,2025-10-9,9:00,12:00
+Alumno,Sofia Perez,10025809-8,Geologia,G,24,2025-10-17,10:00,11:00
+Alumno,Fernanda Soto,10023483-9,Diseno,D,61,2025-10-13,8:00,10:00
+Alumno,Matias Lopez,10027648-0,Psicologia,D,63,2025-10-16,15:00,16:00
+Profesor,Camila Soto,10006181-1,Docente,J,36,2025-10-25,08:00,10:00
+Profesor,Sofia Torres,10031257-0,Docente,J,49,2025-10-02,08:00,11:00
+Profesor,Matias Torres,10014924-7,Investigador,I,56,2025-10-10,14:00,16:00

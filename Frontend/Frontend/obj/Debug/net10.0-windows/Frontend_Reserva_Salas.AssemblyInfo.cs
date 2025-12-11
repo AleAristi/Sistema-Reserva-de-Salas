@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Frontend_Reserva_Salas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba3330ae0bbe5342ca5cfefd523b67fe07d66625")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2eca495a44c16b4e2ccbd05d9301193a32e3b3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Frontend_Reserva_Salas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Frontend_Reserva_Salas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

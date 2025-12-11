@@ -108,7 +108,7 @@ namespace Frontend_Reserva_Salas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Frontend_Reserva_Salas;component/window5.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Frontend_Reserva_Salas;V1.0.0.0;component/window5.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Window5.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
